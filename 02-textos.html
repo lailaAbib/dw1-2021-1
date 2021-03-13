@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        address {
+            /* fazendo elemento ficar em linha */
+            display: inline;
+            font-style: normal; /* tirar o itálico */
+            /* Volta o sublinhado */
+            text-decoration: underline;
+         }
+         Strong {
+             color: red;
+         }
+         mark {
+            background-color:aqua;
+         }
+     </style>
+</head>
+<body>
+     <h1>Formatação de textos</h1>
+     <!-- Tag <u> = underline (sublinhado)(NÃO USAR) --> 
+     <!-- Tag <address> = endereço -->
+     <p>Okurtilson morava na <address>Rua do Sobe e Desce,
+        333</address>, e seu email era
+         <address>orkutilson@gmail.com</u>
+        </address></p>
+        <!--
+          <i> Itálico (visual apenas)
+          <b> Negrito (bold) (visual apenas)
+         -->
+         <p>Ele estudava em uma <b>escola estadual</b> e sua matéria
+         preferida ea <i>Matemática</i>.</p>
+         <!--
+          <strong> = texto mais importante (forte em inglês) (SEMÂNTICA)
+          <em> êmfase (emphasis) (SEMÂNTICA)        
+         -->
+         <p>Ele estudava em uma <strong>escola estadual</strong> e sua matéria
+         preferida ea <em>Matemática</em>.</p>
+
+         <p>Ele também gostava de usar <mark> caneta marca texto</mark>
+         para destacar os trechos mais importantes do caderno.</p>
+
+         <!--
+         <strike> = traço através do texto (tachado)(OBSOLETO, não usar) 
+         -->
+
+         <p>Sua professora achava que ele era <strike>meio burro</strike>
+        não muito inteligente, já que sempre tinha dificuldades nas provas.</p>
+
+        <!--
+            <del> = texto apagado (SÊMANTICO)
+        -->
+        <p>Sua professora achava que ele era <del>meio burro</del>
+        não muito inteligente, já que sempre tinha dificuldades nas provas.</p>
+        <!--
+       <ins> texto inserido (SÊMANTICO)
+        -->
+        <P>Dpois que fez sua recuperação, sua nota foi de 6,7 <ins>o suficiente
+        para sua aprovação.</ins></P>
+        <!--
+      <sub> texto SUBscrito
+      <sup> texto sobrescrito (SUPerscript)
+        -->
+        <P>Orkutilso também gostava de fórmulas. Suas preferidas eram
+        H<sub>2</sub>0 E = mc<sup>2</sup>
+        </P>
+</body>
+</html>
