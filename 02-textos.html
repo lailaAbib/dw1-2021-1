@@ -18,12 +18,25 @@
          mark {
             background-color:aqua;
          }
+         h1 { 
+             /* Valores para text-align:
+             left, right, center, justify
+             */
+             text-align: center;
+
+          }
+          /* <p class="dir">*/
+          p.dir {
+              text-align: right;
+          }
      </style>
 </head>
 <body>
      <h1>Formatação de textos</h1>
      <!-- Tag <u> = underline (sublinhado)(NÃO USAR) --> 
      <!-- Tag <address> = endereço -->
+      <p class="dir">Historia baseada em fatos reais.</p>
+
      <p>Okurtilson morava na <address>Rua do Sobe e Desce,
         333</address>, e seu email era
          <address>orkutilson@gmail.com</u>
@@ -59,7 +72,7 @@
         <!--
        <ins> texto inserido (SÊMANTICO)
         -->
-        <P>Dpois que fez sua recuperação, sua nota foi de 6,7 <ins>o suficiente
+        <P>Depois que fez sua recuperação, sua nota foi de 6,7 <ins>o suficiente
         para sua aprovação.</ins></P>
         <!--
       <sub> texto SUBscrito
@@ -68,5 +81,36 @@
         <P>Orkutilso também gostava de fórmulas. Suas preferidas eram
         H<sub>2</sub>0 E = mc<sup>2</sup>
         </P>
-</body>
+        <!-- <quote> = citações no meio de um parágrafo
+       <blockquote> = um bloco de citação (com varias linhas, por exemplo)
+       -->
+       <p>Sua frase favorita era <quote>"Penso,logo existo" (Descartes)</quote></p>
+       <blockquote>
+           Há tantos mundos diferentes<br>
+           Tantos sóis diferentes.<br>
+           E nós temos apenas um mundo,<br>
+           Mas vivemos em mundos diferentes.<br>
+           (Dire Straits, Brothers in Arms)
+       </blockquote>
+
+       <!--
+           <abbr> = Definição de abreviações
+               <code> = Representa código de 
+        programação ou marcação.No caso de
+        HTML,os sinais < e > precisam ser
+        Substituidos por &lt; e &gt;,
+        respectivamente
+
+       -->
+       <p>Em suas horas vagas, Orkutilson era um membro ativo
+           da 
+           <abbr title="Associação Comercial do Bairro do
+           Limão">ASMOBALI</abbr> e estudava
+         <abbr title="HyperText Markup Language">HTML</abbr>. Suas tags favoritas eram
+         <code>&lt;Blockquote&gt;</code> e
+         <code>&lt;address&gt;</code>.
+    </p>
+    <p class="dir"><em>Autor: Desconhecido</em></p>
+       
+  </body>
 </html>
