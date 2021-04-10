@@ -1,16 +1,22 @@
 /*    UNIDADES DE MEDIDA    
 1) Unidades absolutas       
- - px (pixel): corresponde a um ponto de iluminação da tela, ou, quando isso não puder determinado (no papel, por exemplo), equivale a 1/96 de uma polegada (1 polegada = 2,54 cm). Seu tamanho, portanto, depende da        resolução da tela       
+    - px (pixel): corresponde a um ponto de iluminação da tela, ou, quando isso não puder determinado (no papel, por exemplo), equivale a 1/96 de uma polegada (1 polegada = 2,54 cm). Seu tamanho, portanto, depende da resolução da tela       
     - pt (point): medida usada para o tamanho de fontes. Equivale a 1/72 de        uma polegada    
-     - cm (centímetro): para impressão        - mm (milímetro): para impressão        - in (inches, polegadas): para impressão    
+    - cm (centímetro): para impressão  
+    - mm (milímetro): para impressão       
+    - in (inches, polegadas): para impressão    
 2) Unidades relativas        
     - em: usada para fontes. Significa 100% do tamanho da fonte do elemento pai
     - rem: usada para fontes. Significa 100 do tamanho da fonte configurado para o elemento <html> (elemento raiz)
     - %: sempre em relação ao tamanho do pai
-    - vw: sempre em
+    - vw: 1% da largura do viewport (área de visualização do navegador)
+    - vh: 1% da altura do viewport
     */
 * { /* Todos os elementos */    
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+html {  /* Elemento raiz */
+    font-size: 20
 }
 div {
     padding: 20px;
@@ -33,8 +39,8 @@ div {
     background-color: hotpink;
     /* Tamanho da fonte do pai: 16pt. 1.5em = 1.5 * 16pt = 24pt */
     font-size: 1.5em;
-    width: 50%;
-    heigth:
+    width: 50%;/* Metade da largura do pai */
+    height: 12vh; /* 12% da altura da janela (e não do pai!) */
 }
 #box3 {
     background-color: mediumpurple;
@@ -46,4 +52,8 @@ div {
     background-color: aquamarine;
     font-size: 3rem; /* 3 * 30px do tamanho de fonte do elemento raiz = 60px */
     width: 40vw; /* 40% da largura da janela (e não do pai)*/
+}
+/* Regras de classe começam com um ponto. */
+.borda-dif{
+     border: 2px dashed red
 }
