@@ -8,38 +8,69 @@ body {
 #root {
     border-radius: 16px;            /* Bordas arredondadas */
     background-color: white;     /* Cor de fundo */
-    padding-top: 50px;
+    margin: 50px 20px 35px 35px 20px; /*Instrução 1*/ 
+    padding: 20px; /*Instrução 1*/
+    /*padding-top: 50px;
     padding-bottom: 35px;
     padding-right: 35px;
-    padding-left: 20px;
+    padding-left: 20px;*/
 }
-p { 
-    text-align: center;
+#as {
+    background-color: red;
+}
+#af {
+ background-color: saddlebrown;
+}
+#am {
+    background-color: green;
+}
+#eu {
+    background-color: blue;
+}
+#oc {
+    background-color: mediumblue;
 }
 h1, h2 {
     color: navy;        /* Cor do texto */
 }
 h1 {   
-    text-align: center;                                 
+    text-align: center;/*Instrução 2*/
+    font-size: 3rem; /*Instrução 2*/                                
     text-shadow: 5px 5px rgba(128, 128, 128, 0.4);    /* Sombra do texto */
 }
 h2 {
+    font-size: 1.5em;
+    /*font-size: 150%;  Introdução 7*/
+}
+p {
+    text-align: right; /*Instrução 6*/
+}
+figure {
+    text-align: center; /*Intrução 3*/
 
 }
 figcaption {
     font-style: italic;      /* Estilo da fonte */ 
     text-align: center;   
 }
-ul{
-    color: brown;
-}
 ol {  /* Lista ordenada de primeiro nível */
     margin-left: 30%;       /* Margem esquerda */
     
+    
 }
-ol[type="2"] > li, ol:not([type]) > li {
+ol[type="a"] {
+    color: black;
+    font-weight: normal;
+   
+}
+ol[type="1"] > li, ol:not([type]) > li {
     font-weight: bold;  /* Coloca em negrito os itens da lista ordenada de primeiro nível */
+   
 }
+span {
+    text-align: center;
+}
+
 iframe {                /* Elemento que contém o vídeo do Youtube */
     display: block;     /* Exibição em bloco */
     margin: 0 auto;     /* Centraliza horizontalmente */
