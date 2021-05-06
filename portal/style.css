@@ -1,9 +1,21 @@
 /* CSS reset*/
+/*@
+*/
 * { /*Todos os elementos */
     padding: 0;
     margin: 0;
+    /*Exemplo de familia de fonte sem serifa 
+    font-family: Calibri, Arial, sans;*/
 
+    /*Exemplo de familia de fonte com serifa
+    font-family: Georgia, 'Times new Roman', serif;*/
+
+    /*Exemplo de familia de fonte MONOESPAÇADA
+    font-family: Consolas, 'Courier New', monospace;*/
+    font-family: Releway, Calibri,
+    Arial, sans;
 }
+
 
 
 header {
@@ -14,4 +26,8 @@ header {
 nav ul li {
     display: inline-block;
     margin: 10px;
+}
+nav {
+    background-color: #ff7f2a; /*cor do fundo*/
+    color: #ffff; /*Cor do texto*/
 }
