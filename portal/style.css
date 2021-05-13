@@ -6,8 +6,9 @@
     --cor-secundaria: #FF7F2A;
     --cor-texto-claro: #dddddd;
     --cor-texto-escura: #777777;
-    --cor-fundo-clara: #bbbbbb;
-    --cor-fundo-escura: #ffffff;
+    --cor-fundo-clara:  #ffffff;
+    --cor-fundo-escura: #bbbbbb;
+    --cor-secundaria-clara: #ffaf7b;
 }
 * { /*Todos os elementos */
     padding: 0;
@@ -62,7 +63,7 @@ nav {
 }
 section{
     background-color: var(--cor-texto-claro);
-    padding: 10px;
+    padding: 24px;
     margin-bottom: 20px;
     /* Bordas arredondadas */
     border-radius: 10px;
@@ -71,11 +72,13 @@ section{
     flex-grow: 1;
 }
 #principal{
-    flex-grow: 3; /* Unidades de largura*/
+   /* flex-grow: 3;  Unidades de largura*/
+   width: 75%;
 }
 #secundario{
     margin-left: 20px;
     background-color: var(--cor-fundo-escura);
+    width: 25%;
 }
 section article{/* article que estão dentro de uma section*/
     margin: 24px 0;  /* 8px top/bottom, 0 left/right*/
@@ -92,3 +95,44 @@ article > h1 >{  /*Só os h1 são filhos diretos de article*/
 article > h1 > a {  /*Só os h1 são filhos diretos de article*/
     font-size: 1.5rem;   /*1.5x o tamanho da fonte do elemento raiz(HTML)*/
 }
+article > p{
+    color: var(--cor-texto-escura);
+}
+article > h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;/*Todas as letras em maiúsculas*/
+}
+.destaque{
+    background-color: var(--cor-secundaria-clara);
+    padding: 12px;
+    border-radius: 4px; /*Bordas LEVEMENTE a rredondas */
+    
+}
+.destaque p {
+    color: #000;
+    font-size: 1.5rem;
+    
+}
+.destaque > h1 > a{
+    font-size: 2.5rem;
+}
+.destaque > h2 {
+    font-size: 1rem;
+}
+.destaque > img {
+    width: 400px;
+}.foto-texto{
+    display: flex;
+    flex-direction: row;/*Os filhos ficarão em linha*/
+}
+#secundario > article > img {
+    display: block;
+    /*margin auto à esquerda e à direita centraliza o elemento quando este é display: block */
+   margin: 0 auto; 
+}
+#secundario > aside > h1 > a {
+    font-size: 1rem;
+    color: #000;
+
+}
+
