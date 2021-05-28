@@ -320,16 +320,19 @@ footer img {
 }
  
 h2 {
-    color:#0066ff;
+    color: #A42BA6;
   }
  
 h3 {
-    color: #0066ff;
+    color: #A42BA6;
   }
   
 h6 {
-    color:#ecebeb;
+    color:#EE86F0;
   }
+p {
+  color: #EE86F0;
+}
   
 #kindle {
     width: 400px;
