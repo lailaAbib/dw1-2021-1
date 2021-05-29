@@ -101,41 +101,113 @@ a:hover h3 {
     background-color: #f2f2f2;
     padding-left: 20px;
   }
+
   
-.card-1 img {
-  align-self: center;
-  margin-bottom: 10px;
-  border-radius: 3px;
-}
-  
-.card-1 {
-  margin-left: 10px;
-  margin-top: 30px;
-  background-color: #211d46;
-  flex-direction: column;
-  padding: 30px 30px 30px 30px; 
-  width: 800px;
-  letter-spacing:.1em;
-  border-radius: 10px;
+
+   /* =====------==== */
+   #content {
+    background-color: #211d46;;
+    padding: 20px;
+    /* Este elemento e seus filhos usarão flexbox */
+    display: flex;
+    flex-direction: row; /* Os filhos ficarão em linha, na horizontal */
 }
 
-.card-1 a{
-  margin-top: 10px;
+main, aside {
+    background-color: #211d46;
+    padding: 24px;
+    margin-bottom: 20px;
+    /* Bordas arrendondadas */
+    border-radius: 10px;
+    /* Sombra (drop-down shadow) */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    flex-grow: 1;   /* 1 unidade de largura (padrão) */
+    max-width: 100%;
 }
 
-.card-1 p{
-  margin-top: 10px;
+main {
+    width: 75%;
 }
 
-  .card-1 h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+aside {
+    margin-left: 20px;
+    background-color: #211d46;;
+    width: 25%;
+}
 
-  .card-1 h6{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+main article, aside article {   /* article que estão de dentro de main ou aside */
+    margin: 24px 0;     /* 24px top/bottom, 0 left/right */
+}
+
+main > h1, aside > h1 {          /* Apenas os h1 que são filhos diretos de main ou aside */
+    /* Deixar o texto em maiúsculas */
+    text-transform: uppercase;
+    color: #A42BA6;
+}
+
+article > h1 {    /* Só os h1 que são filhos diretos de article */
+    margin-bottom: 6px;
+}
+
+article > h1 > a {
+    font-size: 1.5rem;      /* 1.5x o tamanho da fonte do elemento raiz (html) */
+}
+
+article > p {
+    color: #ffffff;
+}
+
+article > h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase; /* Todas as letras em maiúsculas */
+}
+
+.destaque {
+    background-color: #211d46;
+    padding: 24px;
+    border-radius: 4px;  /* Bordas LEVEMENTE arredondadas */
+}
+
+.destaque p {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.destaque > h1 > a {
+    font-size: 2.5rem;
+}
+
+.destaque > h2 {
+    font-size: 1rem;
+}
+
+.destaque img {
+    width: 450px;
+    margin-right: 24px;
+    border-radius: 4px;
+    /* Largura máxima limitada à largura do pai */
+    max-width: 100%;
+}
+aside > article > img {
+  display: block;
+  /* margin auto à esquerda e à direita centraliza o elemento quando este é
+     display: block */
+  margin: 0 auto;
+  border-radius: 4px; /* Borda arredondada */ 
+  /* Largura máxima é 100% da largura do pai */
+  max-width: 100%;
+}
+
+aside > article > h1 > a {
+  font-size: 1rem;
+  color: #000000;
+}
+
+aside > article > h1 {
+  margin-top: 6px;
+}
+
+  /* =====------==== */
 
 .card-2 img{
     align-self: center;
@@ -172,49 +244,12 @@ a:hover h3 {
     margin-bottom: 10px;
   }
 
+   /* =====------==== */
 
-.card-3 img {
-    align-self:center;
-    margin-bottom: 10px;
-    border-radius: 3px;
-  }
-      
-.card-3 {
-    margin-top: 42px;
-    background-color: #211d46;
-    flex-direction: column;
-    padding: 30px 30px 30px 30px; 
-    width: 800px;
-    letter-spacing:.1em;
-    border-radius: 10px;
-  }
-    
-main .card-3 {
-    left: 540px;
-    top: 240px;
-    position: absolute;
-    height: 890px;
-    width: 500px;
-    margin-left: 300px;
-  }
 
-.card-3 a {
-    margin-top: 10px;
-  }
-    
-.card-3 p {
-    margin-top: 10px;
-  }
-    
-.card-3 h2 {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    
-.card-3 h5 {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+
+
+     /* =====------==== */
 
 .card-4 img {
       align-self: center;
@@ -253,6 +288,7 @@ main .card-3 {
       margin-bottom: 10px;
     }
 
+     /* =====------==== */
 
     
 p {

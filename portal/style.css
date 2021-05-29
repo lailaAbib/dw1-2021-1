@@ -104,7 +104,6 @@ nav {
     color: #FFFFFF;
     transition: 300ms;
     background-color: var(--cor-secundaria);
-    margin-top: 48px;
 }
 
 #menu a:hover {
@@ -128,8 +127,8 @@ nav {
 
 #menu-contraido input {
     z-index: 100; /* Traz o input para cima */ 
-    opacity: 0; /* Esconde o input */  
-    display: none;
+    opacity: 0; /* Esconde o input */
+    display: none;  
 }
 
 #menu-contraido span {
@@ -309,17 +308,18 @@ footer img {
 @media screen and (max-width: 800px) {
     #menu {
         min-height: 88px;
+        padding: 0;
     }
     #menu ul {
         margin-top: 50px;
     }
-    #menu ul li { /* Menu vertical */
+    #menu ul li {   /* Menu vertical */
         display: block;
-        margin: 0;
-        padding: 12px 0;
+        margin: 6px 0;
     }
     #menu a {
         width: 100%;
+        display: block;
     }
     #menu-contraido {
         margin-top: 24px;
@@ -328,13 +328,15 @@ footer img {
     #menu-contraido ul {
         display: none;
     }
-    #menu input:checked ~ ul {
-        display: block;
-    }
-    /* Mostra o botão menu */
+    /* Mostra o botão do menu */
     #menu-contraido input, #menu-contraido span {
         display: block;
+        left: 20px;
     }
+    #menu-contraido input:checked ~ ul {
+        display: block;
+    }
+
     #content {
         flex-direction: column; /* Os filhos ficarão em coluna, na vertical */
     }
@@ -371,4 +373,11 @@ footer img {
     /*
         A FAZER: colocar o logo principal e os ícones de redes sociais em coluna
     */
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .destaque > h1 > a {
+        font-size: 2rem;
+    }
 }
