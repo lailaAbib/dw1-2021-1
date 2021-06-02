@@ -14,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
     padding: 0px;
     background-color:#181818;
-    background-image: url('img/teste.jpeg');
+    background-image: url('img/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -450,7 +450,7 @@
       }
       @media screen and (max-width: 800px) {
         .logo{
-          padding-left: 250px;
+          padding-left: 280px;
           padding-top: 20px;
           height: auto;
          }
@@ -491,33 +491,33 @@
         .card-1 {
           margin-top: 30px;
           flex-direction: column;
-          width: 600px;
+          width: 700px;
         }
        .card-2 {
           margin-top: 30px;
           flex-direction: column;
-          width: 600px;
+          width: 700px;
         }
         main .card-3{
-          left: auto;
-          top: 24px;
+          left: 25px;
+          margin-top: 30px;
           position: relative;
-          height: 920px;
-          width: 600px;
+          height: 900px;
+          width: 700px;
           margin-left: 10px;
         }
         main .card-4{
-          left: auto;
-          top: 24px;
+          left: 25px;
+          margin-top: 30px;
           position: relative;
           height: 920px;
-          width: 600px;
+          width: 700px;
           margin-left: 10px;
         }
         .card-5 {
           margin-top: 30px;
           flex-direction: column;
-          width: 600px;
+          width: 700px;
         } 
         main {
         width: 100%;
@@ -546,4 +546,90 @@
         footer address {
         text-align: right;
         }
+        }
+        @media screen and (max-width: 360px) {
+          .logo{
+            padding-left: 250px;
+            padding-top: 20px;
+            height: auto;
+           }
+          
+          #menu {
+          min-height: 88px;
+          }
+          #menu ul {
+          margin-top: 50px;
+          margin-left: -18px;
+          }
+          #menu ul li { /* Menu vertical */
+          display: block;
+          margin: 0;
+          padding: 12px 0;
+          }
+          #menu a {
+              width: 100%;
+          }
+          #menu-contraido {
+          margin-top: 24px;
+          width: 100%;
+          }
+          #menu-contraido ul {
+          display: none;
+          }
+           Mostra o botão do menu 
+          #menu-contraido input, #menu-contraido span {
+          display: block;
+          }
+          #menu-contraido input:checked ~ ul {
+          display: block;
+          }
+          
+           #content {
+          flex-direction: column; /* Os filhos ficarão em coluna, na vertical */
+          }
+          .card-1 {
+            margin-top: 30px;
+            flex-direction: column;
+            width: 550px;
+          }
+         .card-2 {
+            margin-top: 30px;
+            width: 550px;
+          }
+          main .card-3{
+            left: 25px;
+            top: 0;
+            position: relative;
+            height: 600px;
+            width: 550px;
+            margin-left: 10px;
+          }
+          main .card-4{
+            left: 25px;
+            top: 0;
+            position: relative;
+            height: 600px;
+            width: 550px;
+            margin-left: 10px;
+          }
+          .card-5 {
+            margin-top: 30px;
+            flex-direction: column;
+            width: 550px;
+          } 
+          main {
+          width: 100%;
+          }
+          aside {
+          margin-left: 0;
+          width: 100%;
+          }
+          aside > article > h1 {
+          text-align: center;
+          }
+          .destaque img {
+          /* Centralizar a imagem */
+          margin-left: auto;
+          margin-right: auto;
+          }
         }
