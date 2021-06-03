@@ -2,12 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 25px;
+    font-size: 16px;
   }
 
   p {
     text-align: justify;
-    text-indent: 20px;
   }
   
   body {
@@ -31,11 +30,11 @@
   .card-1 {
     display: flex;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 1%;
     background-color: #211d46;
     flex-direction: row;
     padding: 30px 30px 30px 30px; 
-    width: 1200px;
+    width: 50%;
     letter-spacing:.1em;
     border-radius: 10px;
   }
@@ -74,11 +73,11 @@
       
     .card-2 {
       margin-top: 50px;
-      margin-left: 30px;
+      margin-left: 1%;
       background-color: #211d46;
       flex-direction: column;
       padding: 30px 30px 30px 30px; 
-      width: 1200px;
+      width: 50%;
       letter-spacing:.1em;
       border-radius: 10px;
     }
@@ -119,17 +118,17 @@
       background-color: #211d46;
       flex-direction: column;
       padding: 30px 30px 30px 30px; 
-      width: 1200px;
+      width: 50%;
       letter-spacing:.1em;
       border-radius: 10px;
     }
       
-    main .card-3{
-      left: 1070px;
+    main .card-3 {
+      left: 47%;
       top: 183px;
       position: absolute;
-      height: 860px;
-      width: 500px;
+      height: 90%;
+        width: 30%;
       margin-left: 300px;
     }
   
@@ -169,17 +168,17 @@
         background-color: #211d46;
         flex-direction: column;
         padding: 30px 30px 30px 30px; 
-        width: 1200px;
+        width: 50%;
         letter-spacing:.1em;
         border-radius: 10px;
       }
         
-      main .card-4{
-        left: 1070px;
-        top: 1200px;
+      main .card-4 {
+        left: 47%;
+        top: 1280px;
         position: absolute;
-        height: 1162px;
-        width: 500px;
+        height: 90%;
+        width: 30%;
         margin-left: 300px;
       }
     
@@ -217,11 +216,11 @@
           
       .card-5 {
         margin-top: 50px;
-        margin-left: 30px;
+        margin-left: 1%;
         background-color: #211d46;
         flex-direction: column;
         padding: 30px 30px 30px 30px; 
-        width: 1200px;
+        width: 50%;
         letter-spacing:.1em;
         border-radius: 10px;
         
@@ -270,6 +269,7 @@
     }
 
     header {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -294,6 +294,7 @@
         justify-content: space-around;
         background-image: linear-gradient(to right, #181818, #8e8eee,  #181818);
         margin-top: 70px;
+        margin-bottom: 0%;
       }
 
       footer o {
@@ -309,7 +310,6 @@
         padding: 0 12px;
         border-right: 2px solid #ffffff;
       }
-    
     
       footer ul li:last-child{
         border-right: none;
@@ -345,13 +345,14 @@
        }
 
        .logo{
-        padding-left: 850px;
+         display: block;
+        margin: 0 auto;
         padding-top: 20px;
         height: auto;
        }
 
        #celular{
-        width: 350px;
+        width: 320px;
         display: block;
         height: 193px;
       }
@@ -359,9 +360,8 @@
       #fatec{
         margin-bottom: 10px;
         border-radius: 3px;
-        width: 370px;
         display: block;
-        height: 220px;
+        height: 300px;
       }
 
       .social{
@@ -389,169 +389,121 @@
         display: flex;
         align-items: center;
     
-      } 
-      @media screen and (max-width: 1276px) { /* Breakpoint (ponto de quebra) */
-        .logo{
-          padding-left: 500px;
-          padding-top: 20px;
-          height: auto;
-         }
-        .card-1 {
-          margin-top: 30px;
-          flex-direction: column;
-          width: 1000px;
-        }
-       .card-2 {
-          margin-top: 30px;
-          flex-direction: column;
-          width: 1000px;
-        }
-        main .card-3{
-          left: auto;
-          top: auto;
-          position: relative;
-          width: 1000px;
-          margin-left: 26px;
-      
-          
-        }
-        main .card-4{
-          left: auto;
-          top: auto;
-          position: relative;
-          width: 1000px;
-          margin-left: 26px;
-          
-        }
-        .card-5 {
-          margin-top: 30px;
-          flex-direction: column;
-          width: 1000px;
-        } 
-        main {
-        width: 100%;
-        }
-        aside {
-        margin-left: 0;
-        width: 100%;
-        }
-        aside > article > h1 {
-        text-align: center;
-        }
-        .destaque img {
-        /* Centralizar a imagem */
-        margin-left: auto;
-        margin-right: auto;
-        }
-      
-        footer address {
-        text-align: center;
-        }
       }
-      @media screen and (max-width: 800px) {
-        .logo{
-          padding-left: 280px;
-          padding-top: 20px;
-          height: auto;
-         }
+      
+      .card-come img{
+        align-self: center;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        max-width: 450px;
+      }
         
-        #menu {
-        min-height: 88px;
-        }
-        #menu ul {
+      .card-come {
+        
         margin-top: 50px;
-        margin-left: -18px;
-        }
-        #menu ul li { /* Menu vertical */
-        display: block;
-        margin: 0;
-        padding: 12px 0;
-        }
-        #menu a {
-            width: 100%;
-        }
-        #menu-contraido {
-        margin-top: 24px;
-        width: 100%;
-        }
-        #menu-contraido ul {
-        display: none;
-        }
-         Mostra o botão do menu 
-        #menu-contraido input, #menu-contraido span {
-        display: block;
-        }
-        #menu-contraido input:checked ~ ul {
-        display: block;
-        }
+        margin-left: 30px;
+        background-color: #211d46;
+        flex-direction: row;
+        padding: 30px 30px 30px 30px; 
+        width: 800px;
+        letter-spacing:.1em;
+        border-radius: 10px;
+      }
+      
+      .card-come a{
+        margin-top: 10px;
         
-         #content {
-        flex-direction: column; /* Os filhos ficarão em coluna, na vertical */
+      }
+      
+      .card-come p{
+        margin-top: 10px;
+      }
+      
+        .card-come h2{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          color:#A42BA6;
         }
-        .card-1 {
-          margin-top: 30px;
-          flex-direction: column;
-          width: 700px;
+      
+        .card-come h3{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          color:#A42BA6;
         }
-       .card-2 {
-          margin-top: 30px;
-          flex-direction: column;
-          width: 700px;
+      
+        .card-come h6{
+          margin-top: 10px;
+          margin-bottom: 10px;
         }
-        main .card-3{
-          left: 25px;
-          margin-top: 30px;
-          position: relative;
-          height: 900px;
-          width: 700px;
-          margin-left: 10px;
-        }
-        main .card-4{
-          left: 25px;
-          margin-top: 30px;
-          position: relative;
-          height: 920px;
-          width: 700px;
-          margin-left: 10px;
-        }
-        .card-5 {
-          margin-top: 30px;
-          flex-direction: column;
-          width: 700px;
-        } 
-        main {
-        width: 100%;
-        }
-        aside {
-        margin-left: 0;
-        width: 100%;
-        }
-        aside > article > h1 {
-        text-align: center;
-        }
-        .destaque img {
-        /* Centralizar a imagem */
-        margin-left: auto;
-        margin-right: auto;
-        }
-        footer {
-        flex-direction: column;
-        }
-        footer > * { /* Todos os filhos DIRETOS de footer */
-        margin-bottom: 12px;
-        }
-        footer ul li:first-child { /* Só o primeiro (first-child) li */
-        padding-left: 0;
-        }
-        footer address {
-        text-align: right;
-        }
-        }
-        @media screen and (max-width: 360px) {
+
+        @media screen and (max-width: 1276px) { /* Breakpoint (ponto de quebra) */
           .logo{
-            padding-left: 250px;
+            display: block;
+            margin: 0 auto;
             padding-top: 20px;
             height: auto;
+            
+           }
+          .card-1 {
+            margin-top: 30px;
+            flex-direction: column;
+            width: 1000px;
+          }
+         .card-2 {
+            margin-top: 30px;
+            flex-direction: column;
+            width: 1000px;
+          }
+          main .card-3{
+            left: auto;
+            top: auto;
+            position: relative;
+            width: 1000px;
+            margin-left: 26px;
+        
+            
+          }
+          main .card-4{
+            left: auto;
+            top: auto;
+            position: relative;
+            width: 1000px;
+            margin-left: 26px;
+            
+          }
+          .card-5 {
+            margin-top: 30px;
+            flex-direction: column;
+            width: 1000px;
+          } 
+          main {
+          width: 100%;
+          }
+          aside {
+          margin-left: 0;
+          width: 100%;
+          }
+          aside > article > h1 {
+          text-align: center;
+          }
+          .destaque img {
+          /* Centralizar a imagem */
+          margin-left: auto;
+          margin-right: auto;
+          }
+        
+          footer address {
+          text-align: center;
+          }
+        }
+
+        @media screen and (max-width: 800px) {
+          .logo{
+            display: block;
+           margin: 0 auto;
+            padding-top: 20px;
+            height: auto;
+            
            }
           
           #menu {
@@ -590,32 +542,33 @@
           .card-1 {
             margin-top: 30px;
             flex-direction: column;
-            width: 550px;
+            width: 700px;
           }
          .card-2 {
             margin-top: 30px;
-            width: 550px;
+            flex-direction: column;
+            width: 700px;
           }
           main .card-3{
             left: 25px;
-            top: 0;
+            margin-top: 30px;
             position: relative;
-            height: 600px;
-            width: 550px;
+            height: 900px;
+            width: 700px;
             margin-left: 10px;
           }
           main .card-4{
             left: 25px;
-            top: 0;
+            margin-top: 30px;
             position: relative;
-            height: 600px;
-            width: 550px;
+            height: 920px;
+            width: 700px;
             margin-left: 10px;
           }
           .card-5 {
             margin-top: 30px;
             flex-direction: column;
-            width: 550px;
+            width: 700px;
           } 
           main {
           width: 100%;
@@ -632,4 +585,81 @@
           margin-left: auto;
           margin-right: auto;
           }
-        }
+          footer {
+          flex-direction: column;
+          }
+          footer > * { /* Todos os filhos DIRETOS de footer */
+          margin-bottom: 12px;
+          }
+          footer ul li:first-child { /* Só o primeiro (first-child) li */
+          padding-left: 0;
+          }
+          footer address {
+          text-align: right;
+          }
+          }
+
+          @media screen and (max-width: 360px) {
+            .logo{
+              display: block;
+              width: 80%;
+             }
+             header{
+              width: 100%;
+            }
+            nav{
+             width: 100%;
+            }
+             .card-1 {
+               display: block;
+              width: 87%;
+             }
+             img{
+               width: 100%;
+             }
+             #fatec{
+               width: 100%;
+             }
+             #celular{
+              width: 100%;
+             }
+             .card-2 {
+              display: block;
+             width: 87%;
+            } 
+            main .card-3{
+              left: 5px;
+              top: 5px;
+              position: relative;
+              height: 20%;
+              width: 87%;
+              margin-left: 1px;
+            }
+            main .card-4{
+              left: 5px;
+              top: 5px;
+              position: relative;
+              height: 20%;
+              width: 87%;
+              margin-left: 1px;
+            }
+            .card-5 {
+             width: 87%;
+            } 
+          p{
+            text-align: center;
+          }
+          footer {
+            flex-direction: column;
+            width: 630px;
+            }
+            footer > * { /* Todos os filhos DIRETOS de footer */
+            margin-bottom: 12px;
+            }
+            footer ul li:first-child { /* Só o primeiro (first-child) li */
+            padding-left: 0;
+            }
+          footer address {
+           text-align: left;
+  } 
+}
