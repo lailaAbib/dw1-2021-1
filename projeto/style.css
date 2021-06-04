@@ -20,6 +20,92 @@
     background-position: center;
     background-attachment: fixed;
   }
+
+  header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  header img{
+    max-width: 200%;
+  }
+
+  .interface {
+    background-image: linear-gradient(to right, #181818, #8e8eee,  #181818);  
+    justify-content: space-between;
+    
+  }
+
+  nav ul li {
+    display: inline-block; /* Deixa o menu na horizontal */
+    margin: 10px;
+    }
+    
+    nav {
+    background-color: /*#1d3452*/#0F022D; /* Cor do fundo */
+    color: #1d3452; /* Cor do texto */
+    }
+    
+    #menu {
+    padding: 0  20px;
+    }
+    
+    #menu li {
+      margin: -20px 0;
+      }
+    
+    #menu a {
+    height: 100%;
+    padding:  10px 20px;
+    color: #ffffff;
+    transition: 300ms;
+    background-color: /*#211d46*/#0F022D;
+    margin-top: 48px;
+    }
+    
+    #menu a:hover {
+    filter: brightness(0.8); /* Diminui o brilho em 20%, deixando mais escuro */
+    text-decoration: none;
+    }
+    
+    #topnav {
+    display: inline-block;
+    position: relative;
+    }
+    
+    #topnav input, #topnav span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    
+    #topnav input {
+    z-index: 100; /* Traz o input para cima */
+    opacity: 0; /* Esconde o input */
+    display: none;
+    }
+    
+    #topnav span {
+    display: block;
+    background-color: #1d3452;
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    background-image: url('img/menu-icon-48x48.png');
+    background-size: 40px 40px;
+    background-position: center center;
+    cursor: pointer; /* Cursor de mãozinha */
+    display: none;
+    }
+    
+    /* Seletor ~: seleciona o próximo elemento (irmão) */
+    #topnav input:checked ~ span {
+    /* Troca a imagem */
+    background-image: url('img/close-icon-48x48.png');
+    }
   
   .card-1 img{
     align-self: center;
@@ -126,9 +212,9 @@
       
     main .card-3{
       left: 47%;
-      top: 183px;
+      top: 220px;
       position: absolute;
-      height: 60%;
+      height: 65%;
       width: 30%;
       margin-left: 300px;
     }
@@ -178,7 +264,7 @@
         left: 47%;
         top: 119%;
         position: absolute;
-        height: 60%;
+        height: 100%;
         width: 30%;
         margin-left: 300px;
       }
@@ -297,10 +383,6 @@
         margin-top: 70px;
         margin-bottom: 0%;
       }
-
-      footer o {
-        margin-left: 400px;
-      }
     
       footer a{
         color:#ffffff;
@@ -327,24 +409,24 @@
         margin: 0 auto;
         }
 
-      .topnav {
-        overflow: hidden;
-        background-color: #0F022D;
-      }
-      
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 16px 22px;
-        text-decoration: none;
-      }
-      
-      .topnav a:hover {
-        background-color: none /*#04D361*/;
-        color:  #1d3452;/*black*/
-      }
+        #topnav {
+          overflow: hidden;
+          background-color: #0F022D;
+        }
+        
+        #topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 16px 22px;
+          text-decoration: none;
+        }
+        
+        #topnav a:hover {
+          background-color: none /*#04D361*/;
+          color:  #1d3452;/*black*/
+        }
       
       a:hover h3 {
         background-color: none;
@@ -352,7 +434,7 @@
        }
 
        .logo{
-         display: block;
+        display: block;
         margin: 0 auto;
         padding-top: 20px;
         height: auto;
@@ -510,20 +592,19 @@
           }
 
           footer {
-            flex-direction: column;
             width: 100%;
             }
 
-          header {
-            width: 100%;
-          }
+            header {
+              width: 100%;
+            }
         }
 
         @media screen and (max-width: 1020px) {
           .logo{
             display: block;
             margin: 0 auto;
-            width: 40%;
+            width: 30%;
            }
            header{
             width: 100%;
@@ -593,7 +674,7 @@
             .logo{
               display: block;
               margin: 0 auto;
-              width: 40%;
+              width: 30%;
              }
              header{
               width: 100%;
@@ -663,7 +744,7 @@
             .logo{
               display: block;
               margin: 0 auto;
-              width: 80%;
+              width: 50%;
              }
              header{
               width: 100%;
@@ -727,6 +808,36 @@
             footer address {
             text-align: left;
             }
+
+            #menu {
+              min-height: 88px;
+              }
+              #menu ul {
+              margin-top: 50px;
+              margin-left: -18px;
+              }
+              #menu ul li { /* Menu vertical */
+              display: block;
+              margin: 0;
+              padding: 12px 0;
+              }
+              #menu a {
+                  width: 100%;
+              }
+              #topnav {
+              margin-top: 24px;
+              width: 100%;
+              }
+              #topnav ul {
+              display: none;
+              }
+              /* Mostra o botão do menu */
+              #topnav input, #topnav span {
+              display: block;
+              }
+              #topnav input:checked ~ ul {
+              display: block;
+              }
     
           }
 
@@ -734,7 +845,7 @@
             .logo{
               display: block;
               margin: 0 auto;
-              width: 80%;
+              width: 40%;
              }
              header{
               width: 100%;
@@ -795,4 +906,7 @@
             text-align: left;
             }
     
+           
           }
+
+        
